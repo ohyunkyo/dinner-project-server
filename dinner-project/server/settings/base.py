@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # local apps
     "apps.account",
+    # 3rd party apps
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
