@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     # local apps
     "apps.account",
     # 3rd party apps
+    "rest_framework",
+    "rest_framework_simplejwt",
     "drf_yasg",
 ]
 
@@ -137,3 +139,10 @@ if DEBUG is True:
     from .development import *  # noqa: F401, F403
 else:
     from .production import *  # noqa: F401, F403
+
+# drf 설정
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}

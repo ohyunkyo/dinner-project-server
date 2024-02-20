@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 django-environ = "*"
 drf-yasg = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 black = "*"
